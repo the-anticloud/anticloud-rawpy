@@ -1,0 +1,532 @@
+{
+ "schema": "anticloud.tier-bench/1",
+ "project": "RAWPY",
+ "source": {
+  "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\CAMERAS\\RAWPY\\UPSTREAM_CLONE",
+  "git": {
+   "head": "REMOVED_CONTAMINATED_SHA_PENDING_API_RESOLVE",
+   "url": "https://github.com/the-anticloud/OPENMRS_CORE.git",
+   "branch": "master",
+   "committed_at": "2026-09-29T11:06:59+04:00",
+   "sha_verified_from": "local clone .git file read (no .git dir in clone)"
+  }
+ },
+ "metrics": {
+  "files_total": 65,
+  "source_files_scanned": 27,
+  "lines_of_code": 3286,
+  "languages": {
+   ".py": 18,
+   ".rst": 10,
+   ".sh": 7,
+   "(none)": 5,
+   ".txt": 4,
+   ".md": 3,
+   ".cr2": 3,
+   ".nef": 2,
+   ".h": 2,
+   ".libraw": 1,
+   ".in": 1,
+   ".toml": 1,
+   ".gz": 1,
+   ".kdc": 1,
+   ".x3f": 1
+  }
+ },
+ "licence": {
+  "spdx": "MIT",
+  "class": "A",
+  "source_file": "LICENSE",
+  "redistribution_allowed": true
+ },
+ "dependencies": {
+  "count": 24,
+  "unique": 18,
+  "by_ecosystem": {
+   "pypi": 24
+  },
+  "list": [
+   {
+    "ecosystem": "pypi",
+    "name": "numpy",
+    "version": ">=1.26.0",
+    "source_file": "pyproject.toml",
+    "raw": "numpy>=1.26.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "--atleast-version",
+    "version": "=0.21",
+    "source_file": "setup.py",
+    "raw": "--atleast-version=0.21"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DCMAKE_PREFIX_PATH",
+    "version": "=",
+    "source_file": "setup.py",
+    "raw": "-DCMAKE_PREFIX_PATH="
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DLIBRAW_PATH",
+    "version": "=",
+    "source_file": "setup.py",
+    "raw": "-DLIBRAW_PATH="
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DENABLE_X3FTOOLS",
+    "version": "=ON -DENABLE_6BY9RPI=ON ",
+    "source_file": "setup.py",
+    "raw": "-DENABLE_X3FTOOLS=ON -DENABLE_6BY9RPI=ON"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DENABLE_EXAMPLES",
+    "version": "=OFF -DENABLE_OPENMP=",
+    "source_file": "setup.py",
+    "raw": "-DENABLE_EXAMPLES=OFF -DENABLE_OPENMP="
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DENABLE_DEMOSAIC_PACK_GPL2",
+    "version": "=ON -DDEMOSAIC_PACK_GPL2_RPATH=../../LibRaw-demosaic-pack-GPL2 ",
+    "source_file": "setup.py",
+    "raw": "-DENABLE_DEMOSAIC_PACK_GPL2=ON -DDEMOSAIC_PACK_GPL2_RPATH=../../LibRaw-demosaic-pack-GPL2"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DENABLE_DEMOSAIC_PACK_GPL3",
+    "version": "=ON -DDEMOSAIC_PACK_GPL3_RPATH=../../LibRaw-demosaic-pack-GPL3 ",
+    "source_file": "setup.py",
+    "raw": "-DENABLE_DEMOSAIC_PACK_GPL3=ON -DDEMOSAIC_PACK_GPL3_RPATH=../../LibRaw-demosaic-pack-GPL3"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DCMAKE_INSTALL_PREFIX",
+    "version": "=install",
+    "source_file": "setup.py",
+    "raw": "-DCMAKE_INSTALL_PREFIX=install"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-",
+    "version": ">",
+    "source_file": "setup.py",
+    "raw": "->"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DCMAKE_BUILD_TYPE",
+    "version": "=Release",
+    "source_file": "setup.py",
+    "raw": "-DCMAKE_BUILD_TYPE=Release"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DLIBRAW_PATH",
+    "version": "=",
+    "source_file": "setup.py",
+    "raw": "-DLIBRAW_PATH="
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DENABLE_X3FTOOLS",
+    "version": "=ON",
+    "source_file": "setup.py",
+    "raw": "-DENABLE_X3FTOOLS=ON"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DENABLE_6BY9RPI",
+    "version": "=ON",
+    "source_file": "setup.py",
+    "raw": "-DENABLE_6BY9RPI=ON"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DENABLE_OPENMP",
+    "version": "=",
+    "source_file": "setup.py",
+    "raw": "-DENABLE_OPENMP="
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DENABLE_EXAMPLES",
+    "version": "=OFF",
+    "source_file": "setup.py",
+    "raw": "-DENABLE_EXAMPLES=OFF"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DENABLE_RAWSPEED",
+    "version": "=OFF",
+    "source_file": "setup.py",
+    "raw": "-DENABLE_RAWSPEED=OFF"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DCMAKE_INSTALL_PREFIX",
+    "version": "=install",
+    "source_file": "setup.py",
+    "raw": "-DCMAKE_INSTALL_PREFIX=install"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DCMAKE_INSTALL_LIBDIR",
+    "version": "=lib",
+    "source_file": "setup.py",
+    "raw": "-DCMAKE_INSTALL_LIBDIR=lib"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DCMAKE_INSTALL_NAME_DIR",
+    "version": "=",
+    "source_file": "setup.py",
+    "raw": "-DCMAKE_INSTALL_NAME_DIR="
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DENABLE_DEMOSAIC_PACK_GPL2",
+    "version": "=ON",
+    "source_file": "setup.py",
+    "raw": "-DENABLE_DEMOSAIC_PACK_GPL2=ON"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DDEMOSAIC_PACK_GPL2_RPATH",
+    "version": "=../../LibRaw-demosaic-pack-GPL2",
+    "source_file": "setup.py",
+    "raw": "-DDEMOSAIC_PACK_GPL2_RPATH=../../LibRaw-demosaic-pack-GPL2"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DENABLE_DEMOSAIC_PACK_GPL3",
+    "version": "=ON",
+    "source_file": "setup.py",
+    "raw": "-DENABLE_DEMOSAIC_PACK_GPL3=ON"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "-DDEMOSAIC_PACK_GPL3_RPATH",
+    "version": "=../../LibRaw-demosaic-pack-GPL3",
+    "source_file": "setup.py",
+    "raw": "-DDEMOSAIC_PACK_GPL3_RPATH=../../LibRaw-demosaic-pack-GPL3"
+   }
+  ]
+ },
+ "owasp_top10": {
+  "total_findings": 6,
+  "files_with_findings": 4,
+  "severity": {
+   "high": 1,
+   "medium": 0,
+   "low": 5
+  },
+  "categories": {
+   "A01-BrokenAccessControl": {
+    "count": 0,
+    "findings": []
+   },
+   "A02-CryptographicFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A03-Injection": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "setup.py",
+      "line": 410,
+      "cwe": "CWE-95",
+      "snippet": "exec(open(\"rawpy/_version.py\").read())"
+     }
+    ]
+   },
+   "A04-InsecureDesign": {
+    "count": 3,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "setup.py",
+      "line": 356,
+      "cwe": "CWE-",
+      "snippet": "# egg_info, sdist, or --version.  This replaces the old sys.argv sniffing hack."
+     },
+     {
+      "severity": "low",
+      "file": "rawpy/enhance.py",
+      "line": 72,
+      "cwe": "CWE-",
+      "snippet": "# TODO this is a bit slow, try RawSpeed"
+     },
+     {
+      "severity": "low",
+      "file": "docs/conf.py",
+      "line": 29,
+      "cwe": "CWE-",
+      "snippet": "\"sphinx.ext.autodoc\","
+     }
+    ]
+   },
+   "A05-SecurityMisconfiguration": {
+    "count": 0,
+    "findings": []
+   },
+   "A06-VulnerableComponents": {
+    "count": 0,
+    "findings": []
+   },
+   "A07-AuthFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A08-SoftwareDataIntegrity": {
+    "count": 2,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "test/test_basic.py",
+      "line": 77,
+      "cwe": "CWE-319",
+      "snippet": "# see http://www.mit.edu/~kimo/blog/linear.html"
+     },
+     {
+      "severity": "low",
+      "file": "rawpy/enhance.py",
+      "line": 338,
+      "cwe": "CWE-319",
+      "snippet": "`dcraw file format <http://www.cybercom.net/~dcoffin/dcraw/.badpixels>`_."
+     }
+    ]
+   },
+   "A09-LoggingMonitoringFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A10-SSRF": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "owasp_llm_top10": {
+  "total_findings": 0,
+  "files_with_findings": 0,
+  "severity": {
+   "high": 0,
+   "medium": 0,
+   "low": 0
+  },
+  "categories": {
+   "LLM01-PromptInjection": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM02-SensitiveInfoDisclosure": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM03-SupplyChain": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM04-DataPoisoning": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM05-ImproperOutputHandling": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM06-ExcessiveAgency": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM07-SystemPromptLeak": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM08-VectorEmbeddingWeaknesses": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM09-Misinformation": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM10-UnboundedConsumption": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "sbom": {
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:f5f7d55a-e793-5e7f-98c0-b2d7dae9f0bb",
+  "version": 1,
+  "metadata": {
+   "timestamp": "2026-10-06T09:25:35Z",
+   "component": {
+    "type": "application",
+    "name": "RAWPY",
+    "version": "83b357604d34",
+    "bom-ref": "pkg:generic/anticloud/RAWPY@83b357604d34",
+    "purl": "pkg:generic/anticloud/RAWPY@83b357604d34",
+    "licenses": [
+     {
+      "license": {
+       "id": "MIT"
+      }
+     }
+    ]
+   },
+   "properties": [
+    {
+     "name": "anticloud:source-commit",
+     "value": "REMOVED_CONTAMINATED_SHA_PENDING_API_RESOLVE"
+    },
+    {
+     "name": "anticloud:source-url",
+     "value": "https://github.com/the-anticloud/OPENMRS_CORE.git"
+    },
+    {
+     "name": "anticloud:tier",
+     "value": "tier-agent"
+    }
+   ]
+  },
+  "components": [
+   {
+    "type": "library",
+    "name": "numpy",
+    "version": ">=1.26.0",
+    "purl": "pkg:pypi/numpy@1.26.0",
+    "bom-ref": "pypi/numpy@>=1.26.0"
+   },
+   {
+    "type": "library",
+    "name": "--atleast-version",
+    "version": "=0.21",
+    "purl": "pkg:pypi/--atleast-version@0.21",
+    "bom-ref": "pypi/--atleast-version@=0.21"
+   },
+   {
+    "type": "library",
+    "name": "-DCMAKE_PREFIX_PATH",
+    "version": "=",
+    "purl": "pkg:pypi/-dcmake-prefix-path@",
+    "bom-ref": "pypi/-DCMAKE_PREFIX_PATH@="
+   },
+   {
+    "type": "library",
+    "name": "-DLIBRAW_PATH",
+    "version": "=",
+    "purl": "pkg:pypi/-dlibraw-path@",
+    "bom-ref": "pypi/-DLIBRAW_PATH@="
+   },
+   {
+    "type": "library",
+    "name": "-DENABLE_X3FTOOLS",
+    "version": "=ON -DENABLE_6BY9RPI=ON ",
+    "purl": "pkg:pypi/-denable-x3ftools@ON -DENABLE_6BY9RPI=ON ",
+    "bom-ref": "pypi/-DENABLE_X3FTOOLS@=ON -DENABLE_6BY9RPI=ON "
+   },
+   {
+    "type": "library",
+    "name": "-DENABLE_EXAMPLES",
+    "version": "=OFF -DENABLE_OPENMP=",
+    "purl": "pkg:pypi/-denable-examples@OFF -DENABLE_OPENMP=",
+    "bom-ref": "pypi/-DENABLE_EXAMPLES@=OFF -DENABLE_OPENMP="
+   },
+   {
+    "type": "library",
+    "name": "-DENABLE_DEMOSAIC_PACK_GPL2",
+    "version": "=ON -DDEMOSAIC_PACK_GPL2_RPATH=../../LibRaw-demosaic-pack-GPL2 ",
+    "purl": "pkg:pypi/-denable-demosaic-pack-gpl2@ON -DDEMOSAIC_PACK_GPL2_RPATH=../../LibRaw-demosaic-pack-GPL2 ",
+    "bom-ref": "pypi/-DENABLE_DEMOSAIC_PACK_GPL2@=ON -DDEMOSAIC_PACK_GPL2_RPATH=../../LibRaw-demosaic-pack-GPL2 "
+   },
+   {
+    "type": "library",
+    "name": "-DENABLE_DEMOSAIC_PACK_GPL3",
+    "version": "=ON -DDEMOSAIC_PACK_GPL3_RPATH=../../LibRaw-demosaic-pack-GPL3 ",
+    "purl": "pkg:pypi/-denable-demosaic-pack-gpl3@ON -DDEMOSAIC_PACK_GPL3_RPATH=../../LibRaw-demosaic-pack-GPL3 ",
+    "bom-ref": "pypi/-DENABLE_DEMOSAIC_PACK_GPL3@=ON -DDEMOSAIC_PACK_GPL3_RPATH=../../LibRaw-demosaic-pack-GPL3 "
+   },
+   {
+    "type": "library",
+    "name": "-DCMAKE_INSTALL_PREFIX",
+    "version": "=install",
+    "purl": "pkg:pypi/-dcmake-install-prefix@install",
+    "bom-ref": "pypi/-DCMAKE_INSTALL_PREFIX@=install"
+   },
+   {
+    "type": "library",
+    "name": "-",
+    "version": ">",
+    "purl": "pkg:pypi/-@",
+    "bom-ref": "pypi/-@>"
+   },
+   {
+    "type": "library",
+    "name": "-DCMAKE_BUILD_TYPE",
+    "version": "=Release",
+    "purl": "pkg:pypi/-dcmake-build-type@Release",
+    "bom-ref": "pypi/-DCMAKE_BUILD_TYPE@=Release"
+   },
+   {
+    "type": "library",
+    "name": "-DENABLE_6BY9RPI",
+    "version": "=ON",
+    "purl": "pkg:pypi/-denable-6by9rpi@ON",
+    "bom-ref": "pypi/-DENABLE_6BY9RPI@=ON"
+   },
+   {
+    "type": "library",
+    "name": "-DENABLE_OPENMP",
+    "version": "=",
+    "purl": "pkg:pypi/-denable-openmp@",
+    "bom-ref": "pypi/-DENABLE_OPENMP@="
+   },
+   {
+    "type": "library",
+    "name": "-DENABLE_RAWSPEED",
+    "version": "=OFF",
+    "purl": "pkg:pypi/-denable-rawspeed@OFF",
+    "bom-ref": "pypi/-DENABLE_RAWSPEED@=OFF"
+   },
+   {
+    "type": "library",
+    "name": "-DCMAKE_INSTALL_LIBDIR",
+    "version": "=lib",
+    "purl": "pkg:pypi/-dcmake-install-libdir@lib",
+    "bom-ref": "pypi/-DCMAKE_INSTALL_LIBDIR@=lib"
+   },
+   {
+    "type": "library",
+    "name": "-DCMAKE_INSTALL_NAME_DIR",
+    "version": "=",
+    "purl": "pkg:pypi/-dcmake-install-name-dir@",
+    "bom-ref": "pypi/-DCMAKE_INSTALL_NAME_DIR@="
+   },
+   {
+    "type": "library",
+    "name": "-DDEMOSAIC_PACK_GPL2_RPATH",
+    "version": "=../../LibRaw-demosaic-pack-GPL2",
+    "purl": "pkg:pypi/-ddemosaic-pack-gpl2-rpath@../../LibRaw-demosaic-pack-GPL2",
+    "bom-ref": "pypi/-DDEMOSAIC_PACK_GPL2_RPATH@=../../LibRaw-demosaic-pack-GPL2"
+   },
+   {
+    "type": "library",
+    "name": "-DDEMOSAIC_PACK_GPL3_RPATH",
+    "version": "=../../LibRaw-demosaic-pack-GPL3",
+    "purl": "pkg:pypi/-ddemosaic-pack-gpl3-rpath@../../LibRaw-demosaic-pack-GPL3",
+    "bom-ref": "pypi/-DDEMOSAIC_PACK_GPL3_RPATH@=../../LibRaw-demosaic-pack-GPL3"
+   }
+  ]
+ },
+ "elapsed_seconds": 10.81
+}
