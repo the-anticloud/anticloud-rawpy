@@ -1,0 +1,23 @@
+# Unit Economics — RAWPY
+
+**Company:** Anticloud FZ LLE
+
+## Cost vs Cloud Baseline
+
+| Item | Cloud (Annual) | Anticloud (One-time) |
+| --- | --- | --- |
+| AI inference API | $12,000–$120,000 | $0 (local PAX) |
+| Cloud hosting | $6,000–$60,000 | $0 (single binary) |
+| Data egress | $1,200–$12,000 | $0 (offline) |
+| Vendor lock-in risk | High | Zero |
+| **Total Year 1** | **$19,200–$192,000** | **License fee only** |
+
+## Anticloud Pricing Model
+
+- Single deployment license: contact lois@0-1.gg
+- Enterprise: volume pricing available
+- Source available under Anticommons 0.1.0
+
+## ROI
+
+Break-even vs cloud in < 3 months for typical CAMERAS deployment.
